@@ -1,6 +1,6 @@
 {
-    "name": "bazilbas",
-    "short_name": "bazilbas",
+    "name": "Bazilbas Store",
+    "short_name": "Bazilbas",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

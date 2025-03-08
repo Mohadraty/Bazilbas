@@ -18,7 +18,7 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="Bazilbas store is an egyptian online store specialized in women wear.">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -29,10 +29,44 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>bazilbas</title>
-  <link rel="manifest" href="manifest.json">
+  <title>Bazilbas Store</title>
+  <link rel="manifest" href="manifest.json">  <style>
+    /* Full screen loader styles */
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #F9F4F1; /* Light background */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #loading {
+      text-align: center;
+      font-family: 'Cairo', sans-serif;
+      font-size: 18px;
+      color: #9B9D85;
+    }
+
+    #loading img {
+      width: 55px;
+      height: 75px;
+      margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
+  <div id="loading">
+  <img src="icons/loading.gif" alt="Loading">
+  <div>Loading Bazilbas Store ...</div>
+</div>
+
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

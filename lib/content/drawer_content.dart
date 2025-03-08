@@ -49,15 +49,15 @@ class _DrawerContentState extends State<DrawerContent> {
                 isSelected: drawerFuncion.browseIndex == index,
                 onPressed: () {
                   setState(() {
-                    if (index == 0) {
+                    if (drawerModel.drawerNavText[index] == 'Home') {
                       BlocProvider.of<HomeCubit>(context).showOrders = false;
                       BlocProvider.of<HomeCubit>(context).showFavorite = false;
                     }
-                    if (index == 1) {
+                    if (drawerModel.drawerNavText[index] == 'Favorite') {
                       BlocProvider.of<HomeCubit>(context).showOrders = false;
                       BlocProvider.of<HomeCubit>(context).showFavorite = true;
                     }
-                    if (index == 2) {
+                    if (drawerModel.drawerNavText[index] == 'Orders') {
                       BlocProvider.of<HomeCubit>(context).showOrders = true;
                     }
                     BlocProvider.of<HomeCubit>(context).refreshState();
